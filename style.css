@@ -7,7 +7,7 @@
     --button-text-color: rgba(255, 255, 255, 0.8);
     --card-background-color: rgba(255, 255, 255, 0.8);
     --container-background-color: rgba(255, 255, 255, 0.15);
-   
+
 }
 
 * {
@@ -31,15 +31,16 @@ body {
     background-repeat: no-repeat;
     z-index: 1000;
     pointer-events: none;
-    opacity: 0; 
+    opacity: 0;
     animation: fadeIn 2s ease-in-out forwards;
-    animation-delay: 4s; 
+    animation-delay: 4s;
 }
 
 @keyframes fadeIn {
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
@@ -76,12 +77,13 @@ body {
     transform: rotate(180deg) scale(1.5);
     animation-delay: 8s;
 }
+
 #image4 {
     bottom: 87vh;
     right: 15vw;
     width: 11vw;
     height: 11vw;
-    background-image: url('/pokemon/585966114f6ae202fedf2876.png');
+    background-image: url('/585966114f6ae202fedf2876.png');
     z-index: -1;
     animation-delay: 9s;
 }
@@ -91,45 +93,49 @@ body {
     left: 16vw;
     width: 11vw;
     height: 11vw;
-    background-image: url('/pokemon/1.png');
+    background-image: url('/1.png');
 
     animation-delay: 5s;
 
 }
+
 #image6 {
     bottom: 0vh;
     right: 1vw;
     width: 11vw;
     height: 11vw;
-    background-image: url('/pokemon/5859611e4f6ae202fedf2859.png');
+    background-image: url('/5859611e4f6ae202fedf2859.png');
     transform: rotate(180deg);
     z-index: -1;
     animation-delay: 10s;
 
 }
+
 #image7 {
     bottom: 0vh;
     right: 19vw;
     width: 10vw;
     height: 10vw;
-    background-image: url('/pokemon/585964df4f6ae202fedf285b.png');
+    background-image: url('/585964df4f6ae202fedf285b.png');
     animation-delay: 11s;
 }
+
 #image8 {
     bottom: 0vh;
     right: 90vw;
     width: 11vw;
     height: 11vw;
-    background-image: url('/pokemon/585966094f6ae202fedf2875.png'); 
+    background-image: url('/585966094f6ae202fedf2875.png');
     animation-delay: 6s;
 }
+
 #image9 {
-    bottom: 80vh;
+    bottom: 70vh;
     left: -2vw;
     width: 11vw;
     height: 11vw;
-    background-image: url('/pokemon/585965584f6ae202fedf2867.png');
-    transform: rotate(90deg);   
+    background-image: url('/585965584f6ae202fedf2867.png');
+    transform: rotate(90deg);
     animation-delay: 13s;
 }
 
@@ -138,11 +144,12 @@ body {
     right: 90vw;
     width: 11vw;
     height: 11vw;
-    background-image: url('/pokemon/10.png'); 
+    background-image: url('/10.png');
     transform: rotate(180deg);
     transform: scale(-1);
     animation-delay: 12s;
 }
+
 .container {
     width: 500px;
     margin: 50px auto;
@@ -152,6 +159,7 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     background-color: var(--container-background-color);
     -webkit-box-reflect: below 1px linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.4));
+    transform-style: preserve-3d;
 }
 
 
@@ -162,22 +170,20 @@ h1 {
 
 .animated-title {
     display: inline-block;
-    color: #ffa600;
+    color: var(--accent-color);
     font-size: 3rem;
     position: relative;
     white-space: nowrap;
-    /* Verhindert, dass die Buchstaben umbrechen */
 }
 
 .animated-title span {
     display: inline-block;
     position: relative;
     opacity: 0;
-    /* Unsichtbar am Anfang */
-    animation: fallAnimation 2s ease-in-out forwards;
+    animation: fallAnimation 1s ease-in-out forwards;
 }
 
-/* Keyframe für den Fall-Effekt */
+
 @keyframes fallAnimation {
     0% {
         transform: translateY(-150px);
@@ -198,7 +204,7 @@ h1 {
     }
 }
 
-/* Zufällige Verzögerungen für jeden Buchstaben */
+
 .animated-title span:nth-child(1) {
     animation-delay: 0.1s;
 }
@@ -284,28 +290,37 @@ button {
     transition: background-color 0.5s ease, color 0.5s ease;
 }
 
+input,
+button {
+    outline: none;
+    border: none;
+}
+
 #search-button {
     margin-bottom: 10px;
     margin-left: -4px;
     position: relative;
 }
+
 #search-button::after {
     content: '';
     position: absolute;
-    top: -43px; /* Über dem Button */
+    top: -43px;
+    /* Über dem Button */
     left: 30%;
     transform: translateX(-50%);
     width: 45px;
     height: 45px;
-    background-image: url('./vogel.png');
+    background-image: url('./580b57fcd9996e24bc43c32b.png');
     background-size: contain;
     background-repeat: no-repeat;
     pointer-events: none;
     transform: rotate(0deg);
-    -webkit-box-reflect: below 1px linear-gradient(transparent,transparent, rgba(0, 0, 0, 0.2));
+    -webkit-box-reflect: below 1px linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.2));
     z-index: 1002;
-    
+
 }
+
 .ui-btn {
     border-radius: 50px;
     margin-top: 30px;
@@ -319,7 +334,7 @@ button {
     /* Rotiert um die eigene Mitte */
     user-select: none;
     margin-left: 5px;
-   
+
 }
 
 /* Keyframes für die Rotation */
@@ -346,6 +361,7 @@ button:hover {
 
 .card {
     display: inline-block;
+    position: relative;
     text-align: center;
     padding: 15px;
     margin: 15px;
@@ -356,32 +372,35 @@ button:hover {
     width: 350px;
     color: var(--text-color);
     box-shadow: 0px 10px 13px -7px #180217, 3px 3px 1px 1px rgba(0, 0, 0, 0.07), 3px 3px 8px 1px rgba(0, 0, 0, 0.19);
-
+    transform-style: preserve-3d;
+    transition: 0.5s;
 }
 
 .card img {
     display: block;
     margin: 0 auto 10px;
-    width: 120px;
-    height: 120px;
-    transition: transform 0.5s ease;
-}
-
-.card:hover img {
-    transform: scale(2.0);
+    width: 150px;
+    height: 150px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    border: 3px ridge var(--primary-color);
+    padding: 15px;
+    backdrop-filter: blur(20px);
 }
 
 .card h2 {
+    position: relative;
     font-size: 2rem;
     margin: 0 0 10px;
     color: var(--primary-color);
 }
 
+
+
 .card p {
     margin: 5px 0;
     font-size: 1.5rem;
     color: var(--text-color);
-
 }
 
 .card ul {
@@ -398,13 +417,6 @@ button:hover {
     color: var(--text-color);
 }
 
-input,
-button {
-    outline: none;
-    /* Entfernt den Fokusrahmen */
-    border: none;
-    /* Entfernt eventuell vorhandene Ränder */
-}
 
 @keyframes gradientAnimation {
     0% {
@@ -418,4 +430,38 @@ button {
     100% {
         background-position: 0% 50%;
     }
+}
+
+.container {
+    perspective: 1500px;
+    /* Perspektive für 3D-Effekt */
+    transform-style: preserve-3d;
+    /* Aktiviert 3D-Raum für Kinder */
+    overflow: visible;
+}
+
+.card {
+
+    transform-style: preserve-3d;
+    /* Wichtig für 3D-Effekte */
+    transition: transform 0.5s ease;
+    perspective: 1500px;
+    /* Für eine deutlichere Perspektive */
+}
+
+.card img,
+.card h2,
+.card p .card ul {
+    transform-style: preserve-3d;
+    will-change: transform;
+    transition: transform 0.5s ease;
+}
+
+.card:hover img {
+    transform: translate3d(0, 0, 200px);
+
+}
+
+.card:hover h2 {
+    transform: translate3d(0, 0, 150px);
 }
