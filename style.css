@@ -459,7 +459,6 @@ button:hover {
 
 .card:hover img {
     transform: translate3d(0, 0, 200px);
-
 }
 
 .card:hover h2 {
