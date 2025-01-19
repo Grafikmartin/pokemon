@@ -51,31 +51,33 @@ body {
     left: 10vw;
     width: 15vw;
     height: 15vw;
-    background-image: url('./5859650e4f6ae202fedf2860.png');
+    background-image: url('./assets/Feuervogel.png');
     transform: rotate(-15deg) scale(1.0);
     transform: scaleX(-1);
     animation-delay: 7s;
 }
 
 #image2 {
-    bottom: 1VH;
+    bottom: 6VH;
     LEFT: 5VW;
     width: 13VW;
     height: 13vw;
-    background-image: url('./580b57fcd9996e24bc43c321.png');
+    background-image: url('./assets/Nashornechse.png');
     transform: rotate(0deg) scale(1);
     transform: scaleX(-1);
-    animation-delay: 8s;
+    animation-delay: 17s;
+    -webkit-box-reflect: below -10px linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.4));
 }
 
 #image3 {
-    bottom: 3vh;
-    right: 10vw;
-    width: 10vw;
-    height: 10vw;
-    background-image: url('./5859662e4f6ae202fedf2878.png');
-    transform: rotate(180deg) scale(1.5);
-    animation-delay: 8s;
+    bottom: 3.5vh;
+    right: 7vw;
+    width: 14vw;
+    height: 14vw;
+    background-image: url('./assets/Drache.png');
+    animation-delay: 6s;
+    -webkit-box-reflect: below -55px linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.4));
+    z-index: -51;
 }
 
 #image4 {
@@ -83,20 +85,19 @@ body {
     right: 15vw;
     width: 11vw;
     height: 11vw;
-    background-image: url('/585966114f6ae202fedf2876.png');
+    background-image: url('/assets/schmetterling.png');
     z-index: -1;
     animation-delay: 9s;
 }
 
 #image5 {
-    bottom: 0vh;
+    bottom: 2vh;
     left: 16vw;
     width: 11vw;
     height: 11vw;
-    background-image: url('/1.png');
-
-    animation-delay: 5s;
-
+    background-image: url('/assets/1.png');
+    animation-delay: 8s;
+    -webkit-box-reflect: below -3px linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.4));
 }
 
 #image6 {
@@ -104,39 +105,41 @@ body {
     right: 1vw;
     width: 11vw;
     height: 11vw;
-    background-image: url('/5859611e4f6ae202fedf2859.png');
-    transform: rotate(180deg);
-    z-index: -1;
+    background-image: url('/assets/Fabelloewe.png');
     animation-delay: 10s;
-
+    -webkit-box-reflect: below -60px linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.7));
+    z-index: 1;
+    rotate: 0deg;
 }
 
 #image7 {
-    bottom: 0vh;
+    bottom: 2vh;
     right: 19vw;
     width: 10vw;
     height: 10vw;
-    background-image: url('/585964df4f6ae202fedf285b.png');
+    background-image: url('/assets/federkatze.png');
     animation-delay: 11s;
+    -webkit-box-reflect: below -15px linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.4));
 }
 
 #image8 {
-    bottom: 0vh;
+    bottom: 3vh;
     right: 90vw;
     width: 11vw;
     height: 11vw;
-    background-image: url('/585966094f6ae202fedf2875.png');
-    animation-delay: 6s;
+    background-image: url('/assets/Schlange.png');
+    animation-delay: 13s;
+    -webkit-box-reflect: below -30px linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.4));
 }
 
 #image9 {
     bottom: 70vh;
     left: -2vw;
-    width: 11vw;
-    height: 11vw;
-    background-image: url('/585965584f6ae202fedf2867.png');
+    width: 12vw;
+    height: 12vw;
+    background-image: url('/assets/Ring.png');
     transform: rotate(90deg);
-    animation-delay: 13s;
+    animation-delay: 14s;
 }
 
 #image10 {
@@ -144,14 +147,23 @@ body {
     right: 90vw;
     width: 11vw;
     height: 11vw;
-    background-image: url('/10.png');
+    background-image: url('/assets/Kroko.png');
     transform: rotate(180deg);
     transform: scale(-1);
-    animation-delay: 12s;
+    animation-delay: 15s;
+}
+#image11 {
+    top: 190px;
+    right: 60vw;
+    width: 11vw;
+    height: 11vw;
+    background-image: url('/assets/Fisch.png');
+    transform: rotate(0deg);
+    animation-delay: 4s;
 }
 
 .container {
-    width: 500px;
+    width: 450px;
     margin: 50px auto;
     text-align: center;
     padding: 20px;
@@ -161,7 +173,6 @@ body {
     -webkit-box-reflect: below 1px linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.4));
     transform-style: preserve-3d;
 }
-
 
 h1 {
 
@@ -187,19 +198,16 @@ h1 {
 @keyframes fallAnimation {
     0% {
         transform: translateY(-150px);
-        /* Startpunkt weit oben */
         opacity: 0;
     }
 
     75% {
         transform: translateY(10px);
-        /* Kurz unter die Zielposition fallen */
         opacity: 1;
     }
 
     100% {
         transform: translateY(0);
-        /* Endposition */
         opacity: 1;
     }
 }
@@ -301,24 +309,22 @@ button {
     margin-left: -4px;
     position: relative;
 }
-
+/* Der Vogel */
 #search-button::after {
     content: '';
     position: absolute;
     top: -43px;
-    /* Über dem Button */
     left: 30%;
     transform: translateX(-50%);
-    width: 45px;
-    height: 45px;
-    background-image: url('./580b57fcd9996e24bc43c32b.png');
+    width: 50px;
+    height: 50px;
+    background-image: url('./assets/vogel.png');
     background-size: contain;
     background-repeat: no-repeat;
     pointer-events: none;
     transform: rotate(0deg);
     -webkit-box-reflect: below 1px linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.2));
     z-index: 1002;
-
 }
 
 .ui-btn {
@@ -327,17 +333,13 @@ button {
     display: inline-block;
     position: relative;
     transform-style: preserve-3d;
-    /* Aktiviert 3D-Rendering */
     animation: rotateY 10s linear infinite;
-    /* Langsame Y-Achsen-Rotation */
     transform-origin: center;
-    /* Rotiert um die eigene Mitte */
     user-select: none;
     margin-left: 5px;
 
 }
 
-/* Keyframes für die Rotation */
 @keyframes rotateY {
     0% {
         transform: rotateY(0deg);
@@ -347,7 +349,6 @@ button {
         transform: rotateY(360deg);
     }
 }
-
 
 button:hover {
     background-color: var(--accent-color);
@@ -395,8 +396,6 @@ button:hover {
     color: var(--primary-color);
 }
 
-
-
 .card p {
     margin: 5px 0;
     font-size: 1.5rem;
@@ -433,20 +432,14 @@ button:hover {
 }
 
 .container {
-    perspective: 1500px;
-    /* Perspektive für 3D-Effekt */
-    transform-style: preserve-3d;
-    /* Aktiviert 3D-Raum für Kinder */
     overflow: visible;
 }
 
 .card {
 
     transform-style: preserve-3d;
-    /* Wichtig für 3D-Effekte */
     transition: transform 0.5s ease;
     perspective: 1500px;
-    /* Für eine deutlichere Perspektive */
 }
 
 .card img,
@@ -459,6 +452,7 @@ button:hover {
 
 .card:hover img {
     transform: translate3d(0, 0, 200px);
+    scale: 1.1;
 }
 
 .card:hover h2 {

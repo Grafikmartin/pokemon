@@ -7,6 +7,7 @@
     <title>Pokémon Search</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./assets/pokemon-favikon.png" sizes="32x32">
 
 </head>
 
@@ -19,14 +20,14 @@
     <div class="image-layer" id="image6"></div>
     <div class="image-layer" id="image7"></div>
     <div class="image-layer" id="image8"></div>
-    <div class="image-layer" id="image9"></div>
-    <div class="image-layer" id="image10"></div>
-
-
+    <div class="image-layer" id="image9"></div>   
+    <div class="image-layer" id="image10"></div> <div class="image-layer" id="image11"></div>
+   
+   
     <div class="container">
-
+    
         <h1 class="animated-title">
-            <span>P</span><span>o</span><span>k</span><span>é</span><span>m</span><span>o</span><span>n</span>
+            <span>P</span><span>o</span><span>k</span><span>é</span><span>m</span><span>o</span><span>n</span> 
             <span>S</span><span>e</span><span>a</span><span>r</span><span>c</span><span>h</span>
         </h1>
         <div class="search-box">
@@ -40,17 +41,15 @@
         <span>
 
         </span>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"
-            integrity="sha512-wC/cunGGDjXSl9OHUH0RuqSyW4YNLlsPwhcLxwWW1CR4OeC2E1xpcdZz2DeQkEmums41laI+eGMw95IJ15SS3g=="
-            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script>
-            VanillaTilt.init(document.querySelectorAll(".result-container"), {
-                max: 10,
-                speed: 400,
-                glare: true,
-                "max-glare": 0.5
-            });
-        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js" integrity="sha512-wC/cunGGDjXSl9OHUH0RuqSyW4YNLlsPwhcLxwWW1CR4OeC2E1xpcdZz2DeQkEmums41laI+eGMw95IJ15SS3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script>
+		VanillaTilt.init(document.querySelectorAll(".result-container"), {
+		max: 15,
+		speed: 400,
+		glare: true,
+		"max-glare": 0.5
+	});
+	</script>
         <script src="script.js"></script>
 </body>
 
